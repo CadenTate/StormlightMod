@@ -1,0 +1,14 @@
+{
+  "item.stormlight_mod.sapphire_sphere": "§9Sapphire Sphere§r",
+  "item.stormlight_mod.smokestone_sphere": "§8Smokestone Sphere§r",
+  "item.stormlight_mod.ruby_sphere": "§4Ruby Sphere§r",
+  "item.stormlight_mod.diamond_sphere": "§bDiamond Sphere§r",
+  "item.stormlight_mod.emerald_sphere": "§2Emerald Sphere§r",
+  "item.stormlight_mod.garnet_sphere": "§cGarnet Sphere§r",
+  "item.stormlight_mod.zircon_sphere": "§3Zircon Sphere§r",
+  "item.stormlight_mod.amethyst_sphere": "§5Amethyst Sphere§r",
+  "item.stormlight_mod.topaz_sphere": "§6Topaz Sphere§r",
+  "item.stormlight_mod.heliodor_sphere": "§eHeliodor Sphere§r",
+
+  "creativeModeTab.stormlight_mod_tab": "The Stormlight Archive"
+}
