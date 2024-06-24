@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#*#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "*": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "id": "stormlight_mod:diamond_sphere",
+    "count": 1
+  }
+}

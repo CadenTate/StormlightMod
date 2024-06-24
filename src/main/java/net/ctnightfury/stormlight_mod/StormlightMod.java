@@ -1,6 +1,7 @@
 package net.ctnightfury.stormlight_mod;
 
 import com.mojang.logging.LogUtils;
+import net.ctnightfury.stormlight_mod.block.ModBlocks;
 import net.ctnightfury.stormlight_mod.item.ModCreativeModeTabs;
 import net.ctnightfury.stormlight_mod.item.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
@@ -22,11 +23,13 @@ public class StormlightMod {
     public static final String MOD_ID = "stormlight_mod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
+
     public StormlightMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register mod items
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         ModCreativeModeTabs.regster(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
