@@ -2,10 +2,13 @@ package net.ctnightfury.stormlight_mod.block;
 
 import net.ctnightfury.stormlight_mod.StormlightMod;
 import net.ctnightfury.stormlight_mod.item.ModItems;
+import net.minecraft.util.valueproviders.IntProvider;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,8 +23,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CREM_STONE = registerBlock("crem_stone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
+
+    // Sphere Ores
     public static final RegistryObject<Block> GARNET_ORE = registerBlock("garnet_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
+            () -> new DropExperienceBlock(UniformInt.of(4,8), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> HELIODOR_ORE = registerBlock("heliodor_ore",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",

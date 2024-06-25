@@ -1,6 +1,7 @@
 package net.ctnightfury.stormlight_mod.item;
 
 import net.ctnightfury.stormlight_mod.StormlightMod;
+import net.ctnightfury.stormlight_mod.item.custom.SoulCaster;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -32,6 +33,31 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> HELIODOR_SPHERE = ITEMS.register("heliodor_sphere",
             () -> new Item(new Item.Properties()));
+
+    // Add Gemstones
+    public static final RegistryObject<Item> SAPPHIRE_GEMSTONE = ITEMS.register("sapphire_gemstone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> SMOKESTONE_GEMSTONE = ITEMS.register("smokestone_gemstone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RUBY_GEMSTONE = ITEMS.register("ruby_gemstone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DIAMOND_GEMSTONE = ITEMS.register("diamond_gemstone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> EMERALD_GEMSTONE = ITEMS.register("emerald_gemstone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> GARNET_GEMSTONE = ITEMS.register("garnet_gemstone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> ZIRCON_GEMSTONE = ITEMS.register("zircon_gemstone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> AMETHYST_GEMSTONE = ITEMS.register("amethyst_gemstone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> TOPAZ_GEMSTONE = ITEMS.register("topaz_gemstone",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> HELIODOR_GEMSTONE = ITEMS.register("heliodor_gemstone",
+            () -> new Item(new Item.Properties()));
+
+    // Custom Advanced Items
+    public static final RegistryObject<Item> SOULCASTER = ITEMS.register("soulcaster", () -> new SoulCaster(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
