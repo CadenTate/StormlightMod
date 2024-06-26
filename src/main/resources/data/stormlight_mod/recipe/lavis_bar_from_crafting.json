@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "#*#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "stormlight_mod:lavis_grain"
+    },
+    "*": {
+      "item": "minecraft:sugar"
+    }
+  },
+  "result": {
+    "id": "stormlight_mod:lavis_bar",
+    "count": 1
+  }
+}

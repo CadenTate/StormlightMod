@@ -1,8 +1,8 @@
 package net.ctnightfury.stormlight_mod.block;
 
 import net.ctnightfury.stormlight_mod.StormlightMod;
+import net.ctnightfury.stormlight_mod.block.custom.HookBlock;
 import net.ctnightfury.stormlight_mod.item.ModItems;
-import net.minecraft.util.valueproviders.IntProvider;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -21,24 +21,28 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, StormlightMod.MOD_ID);
 
-    public static final RegistryObject<Block> CREM_STONE = registerBlock("crem_stone",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)));
-
     // Sphere Ores
     public static final RegistryObject<Block> GARNET_ORE = registerBlock("garnet_ore",
             () -> new DropExperienceBlock(UniformInt.of(4,8), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> HELIODOR_ORE = registerBlock("heliodor_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
+            () -> new DropExperienceBlock(UniformInt.of(4,8), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
+            () -> new DropExperienceBlock(UniformInt.of(4,8), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
+            () -> new DropExperienceBlock(UniformInt.of(4,8), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> SMOKESTONE_ORE = registerBlock("smokestone_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
+            () -> new DropExperienceBlock(UniformInt.of(4,8), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> TOPAZ_ORE = registerBlock("topaz_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
+            () -> new DropExperienceBlock(UniformInt.of(4,8), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
     public static final RegistryObject<Block> ZIRCON_ORE = registerBlock("zircon_ore",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
+            () -> new DropExperienceBlock(UniformInt.of(4,8), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
+
+    // Custom blocks
+    public static final RegistryObject<Block> HOOK_BLOCK = registerBlock("hook_block",
+            () -> new HookBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.CHAIN)));
+
+    public static final RegistryObject<Block> CREM_STONE = registerBlock("crem_stone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TUFF).strength(0.4f)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

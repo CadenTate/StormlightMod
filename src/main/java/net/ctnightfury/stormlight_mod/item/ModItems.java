@@ -1,5 +1,6 @@
 package net.ctnightfury.stormlight_mod.item;
 
+import com.ibm.icu.impl.locale.XCldrStub;
 import net.ctnightfury.stormlight_mod.StormlightMod;
 import net.ctnightfury.stormlight_mod.item.custom.SoulCaster;
 import net.minecraft.world.item.Item;
@@ -58,6 +59,14 @@ public class ModItems {
 
     // Custom Advanced Items
     public static final RegistryObject<Item> SOULCASTER = ITEMS.register("soulcaster", () -> new SoulCaster(new Item.Properties()));
+
+    // Food Items
+    public static final RegistryObject<Item> LAVIS_BAR = ITEMS.register("lavis_bar",
+            () -> new Item(new Item.Properties().food(ModFoods.LAVIS_BAR)));
+
+    // Food Crafting Items
+    public static final RegistryObject<Item> LAVIS_GRAIN = ITEMS.register("lavis_grain",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

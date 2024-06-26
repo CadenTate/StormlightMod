@@ -23,8 +23,12 @@
 
   "item.stormlight_mod.soulcaster": "Soulcaster",
 
+  "item.stormlight_mod.lavis_bar": "Lavis Bar",
+  "item.stormlight_mod.lavis_grain": "Lavis Grain",
+
   "block.stormlight_mod.crem_stone": "Crem Stone",
   "block.stormlight_mod.garnet_ore": "Garnet Ore",
+  "block.stormlight_mod.hook_block": "Hook",
 
   "creativeModeTab.stormlight_mod_tab": "The Stormlight Archive"
 }
