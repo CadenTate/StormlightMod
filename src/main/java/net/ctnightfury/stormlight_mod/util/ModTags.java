@@ -13,7 +13,7 @@ public class ModTags {
         public static final TagKey<Block> GEMSTONE_ORES = tag("gemstone_ores");
 
         private static TagKey<Block> tag(String name) {
-            return BlockTags.create(ResourceLocation.m_338530_(name));
+            return BlockTags.create(new ResourceLocation(name));
         }
     }
 
@@ -21,7 +21,7 @@ public class ModTags {
         public static final TagKey<Item> SPHERES = tag("sphere");
 
         private static TagKey<Item> tag(String name) {
-            return ItemTags.create(ResourceLocation.m_338530_(StormlightMod.MOD_ID));
+            return ItemTags.create(new ResourceLocation(StormlightMod.MOD_ID));
         }
     }
 }
