@@ -20,7 +20,7 @@ import org.slf4j.Logger;
 @Mod(StormlightMod.MOD_ID)
 public class StormlightMod {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "assets/stormlight_mod";
+    public static final String MOD_ID = "stormlight_mod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
