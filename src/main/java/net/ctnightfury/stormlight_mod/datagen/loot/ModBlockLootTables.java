@@ -5,8 +5,11 @@ import net.ctnightfury.stormlight_mod.item.ModItems;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
@@ -14,8 +17,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.Set;
 
 public class ModBlockLootTables extends BlockLootSubProvider {
-
-    protected ModBlockLootTables() {
+    public ModBlockLootTables() {
         super(Set.of(), FeatureFlags.REGISTRY.allFlags());
     }
 
@@ -24,15 +26,16 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.HOOK_BLOCK.get());
         this.dropSelf(ModBlocks.CREM_STONE.get());
 
-        addGemstoneOre(ModBlocks.GARNET_ORE.get(), ModItems.GARNET_GEMSTONE.get());
+        this.add(ModBlocks.GARNET_ORE.get(),
+                block -> createGemstoneDrops(ModBlocks.GARNET_ORE.get(), ModItems.GARNET_GEMSTONE.get()));
     }
 
-    private void addGemstoneOre(Block inputBlock, Item outputItem) {
-        this.add(inputBlock, block -> createGemstoneOreDrops(inputBlock, outputItem));
-    }
-
-    private LootTable.Builder createGemstoneOreDrops(Block block, Item item) {
-        return createOreDrop(block, item).apply(SetItemCountFunction.setCount(UniformGenerator.between(1,1)));
+    protected LootTable.Builder createGemstoneDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1,1)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 
     @Override

@@ -17,7 +17,7 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, StormlightMod.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> STORMLIGHT_CREATIVE_MODE_TAB = CREATIVE_MODE_TABS.register("stormlight_mod_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ZIRCON_SPHERE.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.GARNET_SPHERE.get()))
                     .title(Component.translatable("creativeModeTab.stormlight_mod_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         for(RegistryObject<Item> item : ModItems.ITEMS.getEntries()) {

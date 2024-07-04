@@ -15,12 +15,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        for (RegistryObject<Block> block : ModBlocks.BLOCKS.getEntries()) {
-            blockWithItem(block);
-        }
+        blockWithItem(ModBlocks.GARNET_ORE);
+        blockWithItem(ModBlocks.HOOK_BLOCK);
+        blockWithItem(ModBlocks.CREM_STONE);
     }
 
+
+    // Helper method to create blocks with item
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockWithItem(blockRegistryObject.get(),cubeAll(blockRegistryObject.get()));
+        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 }
