@@ -1,0 +1,10 @@
+// 1.20.1	2024-07-04T11:06:25.2495686	Block States: stormlight_mod
+ff36627a869418e4be4444fc20fd684746829f61 assets/stormlight_mod/blockstates/crem_stone.json
+730dda3435f543b614b5bc407758bd13a5bc2649 assets/stormlight_mod/blockstates/garnet_ore.json
+cae5ee623d6701281438cbf18fb9d53ac6bd6386 assets/stormlight_mod/blockstates/hook_block.json
+2e39ade3a5e00ebdbce067724bbcf6160a5fc8a5 assets/stormlight_mod/models/block/crem_stone.json
+543da49bcca3d360f9861088c8389a9cc28474a8 assets/stormlight_mod/models/block/garnet_ore.json
+ec1afb39d497a53664eb63a9ead9f18d8bccb20f assets/stormlight_mod/models/block/hook_block.json
+ee3311515eb2cfd88043735b9d478c6d2b713255 assets/stormlight_mod/models/item/crem_stone.json
+c1b250f046d934f73ee56579cac9b13589e7bca5 assets/stormlight_mod/models/item/garnet_ore.json
+cfbe2291cb334f669c4cc35d39a908d42f1be143 assets/stormlight_mod/models/item/hook_block.json
