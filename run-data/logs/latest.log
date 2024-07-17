@@ -1,29 +1,46 @@
-[04Jul2024 11:37:19.501] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Caden\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.1, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, stormlight_mod, --all, --output, C:\Users\Caden\Desktop\StormlightMod\src\generated\resources, --existing, C:\Users\Caden\Desktop\StormlightMod\src\main\resources]
-[04Jul2024 11:37:19.505] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[04Jul2024 11:37:19.614] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[04Jul2024 11:37:19.658] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Caden/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[04Jul2024 11:37:19.922] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Caden\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.1\b9fa98d5c9fa107169a3390a1c8993d2134fbf54\javafmllanguage-1.20.1-47.3.1.jar is missing mods.toml file
-[04Jul2024 11:37:19.927] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Caden\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.1\aaa252b4d4c34d0c02e647d7a2ef3df3bc11d73a\lowcodelanguage-1.20.1-47.3.1.jar is missing mods.toml file
-[04Jul2024 11:37:19.932] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Caden\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.1\1722b26446496b5e686cdf124342e8f7fd33dc91\mclanguage-1.20.1-47.3.1.jar is missing mods.toml file
-[04Jul2024 11:37:19.937] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Caden\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.1\4ed2bfe4ae3a6c27f587d45f58d648db68d19c00\fmlcore-1.20.1-47.3.1.jar is missing mods.toml file
-[04Jul2024 11:37:20.002] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[04Jul2024 11:37:21.085] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Caden\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, stormlight_mod, --all, --output, C:\Users\Caden\Desktop\StormlightMod\src\generated\resources, --existing, C:\Users\Caden\Desktop\StormlightMod\src\main\resources]
-[04Jul2024 11:37:21.403] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [stormlight_mod]
-[04Jul2024 11:37:25.003] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.1, for MC 1.20.1 with MCP 20230612.114412
-[04Jul2024 11:37:25.007] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.1 Initialized
-[04Jul2024 11:37:25.388] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Caden/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[04Jul2024 11:37:25.389] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Caden/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[04Jul2024 11:37:25.533] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[04Jul2024 11:37:25.562] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 28 ms
-[04Jul2024 11:37:25.562] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[04Jul2024 11:37:25.600] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 37 ms
-[04Jul2024 11:37:25.600] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: stormlight_mod
-[04Jul2024 11:37:25.729] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: stormlight_mod finished after 128 ms
-[04Jul2024 11:37:25.729] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: stormlight_mod
-[04Jul2024 11:37:25.733] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: stormlight_mod finished after 4 ms
-[04Jul2024 11:37:25.733] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id stormlight_mod
-[04Jul2024 11:37:25.744] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id stormlight_mod finished after 11 ms
-[04Jul2024 11:37:25.745] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id stormlight_mod
-[04Jul2024 11:37:25.746] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id stormlight_mod finished after 1 ms
-[04Jul2024 11:37:25.746] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 213 ms
-[04Jul2024 11:37:25.755] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 23, old count: 18, new count: 24, removed stale: 0, written: 5
+[11Jul2024 14:29:27.636] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Caden\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.3.1, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, stormlight_mod, --all, --output, C:\Users\Caden\Desktop\StormlightMod\src\generated\resources, --existing, C:\Users\Caden\Desktop\StormlightMod\src\main\resources]
+[11Jul2024 14:29:27.641] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.11 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[11Jul2024 14:29:27.758] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[11Jul2024 14:29:27.809] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Caden/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[11Jul2024 14:29:28.102] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Caden\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.3.1\b9fa98d5c9fa107169a3390a1c8993d2134fbf54\javafmllanguage-1.20.1-47.3.1.jar is missing mods.toml file
+[11Jul2024 14:29:28.107] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Caden\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.3.1\aaa252b4d4c34d0c02e647d7a2ef3df3bc11d73a\lowcodelanguage-1.20.1-47.3.1.jar is missing mods.toml file
+[11Jul2024 14:29:28.112] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Caden\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.3.1\1722b26446496b5e686cdf124342e8f7fd33dc91\mclanguage-1.20.1-47.3.1.jar is missing mods.toml file
+[11Jul2024 14:29:28.117] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Caden\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.3.1\4ed2bfe4ae3a6c27f587d45f58d648db68d19c00\fmlcore-1.20.1-47.3.1.jar is missing mods.toml file
+[11Jul2024 14:29:28.186] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[11Jul2024 14:29:29.279] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Caden\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, stormlight_mod, --all, --output, C:\Users\Caden\Desktop\StormlightMod\src\generated\resources, --existing, C:\Users\Caden\Desktop\StormlightMod\src\main\resources]
+[11Jul2024 14:29:29.593] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [stormlight_mod]
+[11Jul2024 14:29:33.505] [main/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: File C:\Users\Caden\Desktop\StormlightMod\build\resources\main constructed 0 mods: [], but had 1 mods specified: [stormlight_mod]
+[11Jul2024 14:29:33.506] [main/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: The following classes are missing, but are reported in the mods.toml: [stormlight_mod]
+[11Jul2024 14:29:33.506] [main/FATAL] [net.minecraftforge.fml.ModLoader/LOADING]: The following mods are missing, but have classes in the jar: []
+[11Jul2024 14:29:33.506] [main/FATAL] [net.minecraftforge.fml.ModLoader/CORE]: Failed to initialize mod containers
+net.minecraftforge.fml.ModLoadingException: fml.modloading.missingclasses
+	at net.minecraftforge.fml.ModLoader.buildMods(ModLoader.java:278) ~[fmlcore-1.20.1-47.3.1.jar:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625) ~[?:?]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:575) ~[?:?]
+	at java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:616) ~[?:?]
+	at java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:622) ~[?:?]
+	at java.util.stream.ReferencePipeline.toList(ReferencePipeline.java:627) ~[?:?]
+	at net.minecraftforge.fml.ModLoader.gatherAndInitializeMods(ModLoader.java:171) ~[fmlcore-1.20.1-47.3.1.jar:?]
+	at net.minecraftforge.data.loading.DatagenModLoader.begin(DatagenModLoader.java:43) ~[forge-1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at net.minecraft.data.Main.main(Main.java:90) ~[forge-1.20.1-47.3.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:111) ~[fmlloader-1.20.1-47.3.1.jar:?]
+	at net.minecraftforge.fml.loading.targets.CommonLaunchHandler.dataService(CommonLaunchHandler.java:107) ~[fmlloader-1.20.1-47.3.1.jar:?]
+	at net.minecraftforge.fml.loading.targets.ForgeDataUserdevLaunchHandler.devService(ForgeDataUserdevLaunchHandler.java:22) ~[fmlloader-1.20.1-47.3.1.jar:?]
+	at net.minecraftforge.fml.loading.targets.CommonDevLaunchHandler.lambda$makeService$7(CommonDevLaunchHandler.java:135) ~[fmlloader-1.20.1-47.3.1.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:108) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:78) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]

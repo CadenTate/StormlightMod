@@ -1,4 +1,10 @@
-// 1.20.1	2024-07-04T11:24:12.286274	Loot Tables
+// 1.20.1	2024-07-04T19:19:06.2785838	Loot Tables
 137cdb428978f66bc4707a3b49166b99ae4cede9 data/stormlight_mod/loot_tables/blocks/crem_stone.json
-e952f578d2617cc9cddf0d90dcb5ce4472ce1a38 data/stormlight_mod/loot_tables/blocks/garnet_ore.json
+d504443c9a2daae4ec933e83d0d50fc9c7cffebf data/stormlight_mod/loot_tables/blocks/garnet_ore.json
+c57b9f12ec8cb88d4d2f763dc4cec64191d711fa data/stormlight_mod/loot_tables/blocks/heliodor_ore.json
 d168f1261f9f61a1474d03247071e81cb36b2140 data/stormlight_mod/loot_tables/blocks/hook_block.json
+ba45e89af88c9a63a7d0bd3f028cf33605a5a21c data/stormlight_mod/loot_tables/blocks/ruby_ore.json
+3cd7025234d4d6a60598d16469c63cf3b24ab1bc data/stormlight_mod/loot_tables/blocks/sapphire_ore.json
+f51ffaf3677a762eacae6296168afad90bcfd31f data/stormlight_mod/loot_tables/blocks/smokestone_ore.json
+606fa61629ca214369af264d83cd2c14e2486067 data/stormlight_mod/loot_tables/blocks/topaz_ore.json
+dc16fad6dbbe09bcf153d5bc3bbed3e4be8fa1b2 data/stormlight_mod/loot_tables/blocks/zircon_ore.json

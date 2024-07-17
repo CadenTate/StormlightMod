@@ -27,8 +27,19 @@
   "item.stormlight_mod.lavis_grain": "Lavis Grain",
 
   "block.stormlight_mod.crem_stone": "Crem Stone",
-  "block.stormlight_mod.garnet_ore": "Garnet Ore",
   "block.stormlight_mod.hook_block": "Hook",
+
+  "block.stormlight_mod.sapphire_ore": "Sapphire Ore",
+  "block.stormlight_mod.smokestone_ore": "Smokestone Ore",
+  "block.stormlight_mod.ruby_ore": "Ruby Ore",
+  "block.stormlight_mod.diamond_ore": "Diamond Ore",
+  "block.stormlight_mod.emerald_ore": "Emerald Ore",
+  "block.stormlight_mod.garnet_ore": "Garnet Ore",
+  "block.stormlight_mod.zircon_ore": "Zircon Ore",
+  "block.stormlight_mod.amethyst_ore": "Amethyst Ore",
+  "block.stormlight_mod.topaz_ore": "Topaz Ore",
+  "block.stormlight_mod.heliodor_ore": "Heliodor Ore",
+
 
   "creativeModeTab.stormlight_mod_tab": "The Stormlight Archive"
 }

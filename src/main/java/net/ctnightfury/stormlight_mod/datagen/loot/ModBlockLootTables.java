@@ -25,9 +25,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.HOOK_BLOCK.get());
         this.dropSelf(ModBlocks.CREM_STONE.get());
+        this.dropSelf(ModBlocks.CREM_STAIRS.get());
+        this.dropSelf(ModBlocks.CREM_BUTTON.get());
+        this.dropSelf(ModBlocks.CREM_WALL.get());
+        this.dropSelf(ModBlocks.CREM_PRESSURE_PLATE.get());
 
-        this.add(ModBlocks.GARNET_ORE.get(),
-                block -> createGemstoneDrops(ModBlocks.GARNET_ORE.get(), ModItems.GARNET_GEMSTONE.get()));
+        this.add(ModBlocks.CREM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CREM_SLAB.get()));
+
+        for(int i = 0; i < ModBlocks.GEMSTONE_ORES.size(); i++) {
+            Block input = ModBlocks.GEMSTONE_ORES.get(i).get();
+            Item output = ModItems.GEMSTONES.get(i).get();
+            this.add(input, block -> createGemstoneDrops(input, output));
+        }
     }
 
     protected LootTable.Builder createGemstoneDrops(Block pBlock, Item item) {
