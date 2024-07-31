@@ -11,11 +11,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "stormlight_mod:crem_block"
+          "name": "stormlight_mod:crem_wall"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "stormlight_mod:blocks/crem_block"
+  "random_sequence": "stormlight_mod:blocks/crem_wall"
 }

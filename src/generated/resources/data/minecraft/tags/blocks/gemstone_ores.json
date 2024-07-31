@@ -1,6 +1,18 @@
 {
   "values": [
     "stormlight_mod:garnet_ore",
+    "#forge:ores",
+    "stormlight_mod:heliodor_ore",
+    "#forge:ores",
+    "stormlight_mod:ruby_ore",
+    "#forge:ores",
+    "stormlight_mod:sapphire_ore",
+    "#forge:ores",
+    "stormlight_mod:smokestone_ore",
+    "#forge:ores",
+    "stormlight_mod:topaz_ore",
+    "#forge:ores",
+    "stormlight_mod:zircon_ore",
     "#forge:ores"
   ]
 }

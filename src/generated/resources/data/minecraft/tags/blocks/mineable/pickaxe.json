@@ -1,7 +1,14 @@
 {
   "values": [
     "stormlight_mod:crem_stone",
+    "stormlight_mod:crem_stairs",
     "stormlight_mod:hook_block",
-    "stormlight_mod:garnet_ore"
+    "stormlight_mod:garnet_ore",
+    "stormlight_mod:heliodor_ore",
+    "stormlight_mod:ruby_ore",
+    "stormlight_mod:sapphire_ore",
+    "stormlight_mod:smokestone_ore",
+    "stormlight_mod:topaz_ore",
+    "stormlight_mod:zircon_ore"
   ]
 }

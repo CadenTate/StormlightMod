@@ -55,7 +55,7 @@ public class ModBlocks {
                     BlockSetType.IRON, 10, true));
     public static final RegistryObject<Block> CREM_PRESSURE_PLATE = registerBlock("crem_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.TUFF), BlockSetType.IRON));
-    public static final RegistryObject<Block> CREM_WALL = registerBlock("crem_block",
+    public static final RegistryObject<Block> CREM_WALL = registerBlock("crem_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.TUFF)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -26,6 +26,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.LAVIS_GRAIN);
         simpleItem(ModItems.LAVIS_BAR);
 
+        evenSimplerBlockItem(ModBlocks.CREM_STAIRS);
+        evenSimplerBlockItem(ModBlocks.CREM_SLAB);
+        evenSimplerBlockItem(ModBlocks.CREM_PRESSURE_PLATE);
+
         buttonItem(ModBlocks.CREM_BUTTON, ModBlocks.CREM_STONE);
         wallItem(ModBlocks.CREM_WALL, ModBlocks.CREM_STONE);
     }
@@ -34,6 +38,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(StormlightMod.MOD_ID, "item/" + item.getId().getPath()));
+    }
+
+    public void evenSimplerBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(StormlightMod.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
 
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
@@ -46,6 +55,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .texture("wall",  new ResourceLocation(StormlightMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
+    // Use for Doors
     private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",

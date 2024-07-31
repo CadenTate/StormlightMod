@@ -1,5 +1,10 @@
-// 1.20.1	2024-07-04T19:19:06.2785838	Loot Tables
+// 1.20.1	2024-07-30T16:20:55.1319012	Loot Tables
+746f01176014839b90cfa8b275cd032bbc203471 data/stormlight_mod/loot_tables/blocks/crem_button.json
+1dce890c6bc52a3ae90b984135349ec418e61a3a data/stormlight_mod/loot_tables/blocks/crem_pressure_plate.json
+bd060b95bc1736474036968ae52396f5689130d7 data/stormlight_mod/loot_tables/blocks/crem_slab.json
+e968caa70302e05f79a07c0f2fcf30952bd08c27 data/stormlight_mod/loot_tables/blocks/crem_stairs.json
 137cdb428978f66bc4707a3b49166b99ae4cede9 data/stormlight_mod/loot_tables/blocks/crem_stone.json
+300d17683d1dfbc2469581b80671294e42c37f9b data/stormlight_mod/loot_tables/blocks/crem_wall.json
 d504443c9a2daae4ec933e83d0d50fc9c7cffebf data/stormlight_mod/loot_tables/blocks/garnet_ore.json
 c57b9f12ec8cb88d4d2f763dc4cec64191d711fa data/stormlight_mod/loot_tables/blocks/heliodor_ore.json
 d168f1261f9f61a1474d03247071e81cb36b2140 data/stormlight_mod/loot_tables/blocks/hook_block.json

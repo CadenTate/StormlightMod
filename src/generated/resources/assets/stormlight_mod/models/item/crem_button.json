@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_inventory",
+  "textures": {
+    "texture": "stormlight_mod:block/crem_stone"
+  }
+}

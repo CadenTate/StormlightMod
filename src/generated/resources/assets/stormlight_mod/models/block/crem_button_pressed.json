@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button_pressed",
+  "textures": {
+    "texture": "stormlight_mod:block/crem_stone"
+  }
+}

@@ -1,5 +1,6 @@
-// 1.20.1	2024-07-04T19:19:06.2765855	Tags for minecraft:block mod id stormlight_mod
-473c9f5e00ef58cd04010fe44c0378abb74ac1b9 data/minecraft/tags/blocks/gemstone_ores.json
-5a009bc6bdf4046fc947e91cc535852919d3aa5b data/minecraft/tags/blocks/mineable/pickaxe.json
+// 1.20.1	2024-07-30T16:20:55.1289028	Tags for minecraft:block mod id stormlight_mod
+03a377b97f133b2cdfe0d4ae3a53d8bdf92e6ff0 data/minecraft/tags/blocks/gemstone_ores.json
+f24423a5c34cfb94664639822d8732472b5b9fe8 data/minecraft/tags/blocks/mineable/pickaxe.json
 d43b7c4e6bd7c79826fd2fdc40273df57ab656b9 data/minecraft/tags/blocks/needs_diamond_tool.json
 189a3b65a0c495bc72f9d21aa6d0824a98a3b959 data/minecraft/tags/blocks/needs_iron_tool.json
+4185461e57515ed4d462da182d27e8d8e057f503 data/minecraft/tags/blocks/walls.json

@@ -20,6 +20,6 @@ public class SoulCaster extends Item {
         if(!world.isClientSide()) {
             Transformation.Soulcast(world, player);
         }
-        return InteractionResultHolder.success(player.getItemInHand(hand));
+        return InteractionResultHolder.pass(player.getItemInHand(hand));
     }
 }

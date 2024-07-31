@@ -1,5 +1,10 @@
-// 1.20.1	2024-07-04T23:10:54.8819915	Item Models: stormlight_mod
+// 1.20.1	2024-07-30T16:49:55.4978418	Item Models: stormlight_mod
 0587540f2c80531c9d4f596ffe3a0c2d53238dc7 assets/stormlight_mod/models/item/amethyst_sphere.json
+69cf16c5027badb0f83fdda73a70bc67875b8a1b assets/stormlight_mod/models/item/crem_button.json
+aedd2fceeb3b5a233a10fe367319122bf413370e assets/stormlight_mod/models/item/crem_pressure_plate.json
+9795d6a2fb848e0efe6bf22f630572f224fec9cc assets/stormlight_mod/models/item/crem_slab.json
+97e2a9e0890d37302642015e17eebd38c2d3bc15 assets/stormlight_mod/models/item/crem_stairs.json
+13d35ab68d46800d625a67498dd319d23c7de3ca assets/stormlight_mod/models/item/crem_wall.json
 a5b3220f30d2e86276b7d8ba95ea22ce05b39059 assets/stormlight_mod/models/item/diamond_sphere.json
 0a54df2560a03a909beb705ad95a74577ace3002 assets/stormlight_mod/models/item/emerald_sphere.json
 de6c502dfbeb9abd9c4f98381fd06e3bafcdc4cd assets/stormlight_mod/models/item/garnet_gemstone.json

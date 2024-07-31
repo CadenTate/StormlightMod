@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "stormlight_mod:block/crem_slab"
+    },
+    "type=double": {
+      "model": "stormlight_mod:block/crem_stone"
+    },
+    "type=top": {
+      "model": "stormlight_mod:block/crem_slab_top"
+    }
+  }
+}
