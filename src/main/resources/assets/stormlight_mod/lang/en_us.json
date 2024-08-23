@@ -46,5 +46,8 @@
   "block.stormlight_mod.heliodor_ore": "Heliodor Ore",
 
 
-  "creativeModeTab.stormlight_mod_tab": "The Stormlight Archive"
+  "creativeModeTab.stormlight_mod_tab": "The Stormlight Archive",
+  "key.categories.stormlight_mod.stormlight": "Stormlight",
+  "key.stormlight_mod.activateprimarysurge": "Primary Surge Activation",
+  "key.stormlight_mod.controlprimarysurge": "Primary Surge Control"
 }

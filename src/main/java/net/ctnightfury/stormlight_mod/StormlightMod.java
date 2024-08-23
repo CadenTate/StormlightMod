@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 import net.ctnightfury.stormlight_mod.block.ModBlocks;
 import net.ctnightfury.stormlight_mod.item.ModCreativeModeTabs;
 import net.ctnightfury.stormlight_mod.item.ModItems;
+import net.ctnightfury.stormlight_mod.surges.Progression;
+import net.ctnightfury.stormlight_mod.util.KeybindHandler;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -36,7 +38,6 @@ public class StormlightMod {
         modEventBus.addListener(this::addCreative);
         MinecraftForge.EVENT_BUS.register(this);
     }
-
 
     private void commonSetup(final FMLCommonSetupEvent event) {
 
