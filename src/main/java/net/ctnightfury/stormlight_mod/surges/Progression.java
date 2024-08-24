@@ -4,7 +4,6 @@ import net.ctnightfury.stormlight_mod.StormlightMod;
 import net.ctnightfury.stormlight_mod.util.KeybindHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.TickEvent;
@@ -31,7 +30,7 @@ public class Progression {
                 }
                 while (KeybindHandler.ACTIVATE_PRIMARY_SURGE.consumeClick()) {
                     healTarget.setHealth(healTarget.getMaxHealth());
-                    mc.player.sendSystemMessage(Component.literal(healTarget.getDisplayName() + "has been healed!"));
+                    mc.player.displayClientMessage(Component.literal("§2§l" +  healTarget.getDisplayName() + "has been healed!"),true);
                 }
             }
         }
@@ -41,6 +40,7 @@ public class Progression {
     public static void onEntityInteract(PlayerInteractEvent.EntityInteract event) {
         try {
             healTarget = (Player) event.getTarget();
+            event.getEntity().displayClientMessage(Component.literal("§2§l"+healTarget.getHealth() + " out of " + healTarget.getMaxHealth()),true);
         } catch (Exception e) {
             healTarget = null;
         }
