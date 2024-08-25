@@ -4,7 +4,6 @@ import com.mojang.logging.LogUtils;
 import net.ctnightfury.stormlight_mod.block.ModBlocks;
 import net.ctnightfury.stormlight_mod.item.ModCreativeModeTabs;
 import net.ctnightfury.stormlight_mod.item.ModItems;
-import net.ctnightfury.stormlight_mod.surges.Progression;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
