@@ -13,9 +13,4 @@ public class HookBlock extends Block {
     public HookBlock(Properties properties) {
         super(properties);
     }
-
-    @Override
-    public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
-        return InteractionResult.SUCCESS;
-    }
 }

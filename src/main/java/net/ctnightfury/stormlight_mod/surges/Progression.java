@@ -24,7 +24,7 @@
 //        if (event.phase == TickEvent.Phase.END) {
 //            Minecraft mc = Minecraft.getInstance();
 //            if (healTarget != null) {
-//                if (mc.player.distanceTo(healTarget) > 1) {
+//                if (mc.player.isCloseEnough(healTarget, 1)) {
 //                    healTarget = null;
 //                    mc.player.sendSystemMessage(Component.literal("Out of Range"));
 //                }
