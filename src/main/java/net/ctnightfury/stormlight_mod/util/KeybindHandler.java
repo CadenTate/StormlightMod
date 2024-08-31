@@ -23,7 +23,14 @@ public class KeybindHandler {
             "key.stormlight_mod.controlprimarysurge",
             KeyConflictContext.IN_GAME,
             InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_G,
+            GLFW.GLFW_KEY_H,
+            "key.categories.stormlight_mod.stormlight"
+    );
+    public static final KeyMapping LASHING_CHANGE = new KeyMapping(
+            "key.stormlight_mod.lashingchange",
+            KeyConflictContext.IN_GAME,
+            InputConstants.Type.KEYSYM,
+            GLFW.GLFW_KEY_C,
             "key.categories.stormlight_mod.stormlight"
     );
 
@@ -32,5 +39,6 @@ public class KeybindHandler {
     public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
         event.register(ACTIVATE_PRIMARY_SURGE);
         event.register(CONTROL_PRIMARY_SURGE);
+        event.register(LASHING_CHANGE);
     }
 }
