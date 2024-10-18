@@ -49,5 +49,7 @@
   "creativeModeTab.stormlight_mod_tab": "The Stormlight Archive",
   "key.categories.stormlight_mod.stormlight": "Stormlight",
   "key.stormlight_mod.activateprimarysurge": "Primary Surge Activation",
-  "key.stormlight_mod.controlprimarysurge": "Primary Surge Control"
+  "key.stormlight_mod.controlprimarysurge": "Primary Surge Control",
+
+  "item.stormlight_mod.shard_blade": "Shardblade"
 }

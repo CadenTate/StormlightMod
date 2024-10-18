@@ -1,10 +1,9 @@
 package net.ctnightfury.stormlight_mod.item;
 
-import com.ibm.icu.impl.locale.XCldrStub;
 import net.ctnightfury.stormlight_mod.StormlightMod;
 import net.ctnightfury.stormlight_mod.item.custom.SoulCaster;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -74,6 +73,10 @@ public class ModItems {
     // Food Crafting Items
     public static final RegistryObject<Item> LAVIS_GRAIN = ITEMS.register("lavis_grain",
             () -> new Item(new Item.Properties()));
+
+    // Shard blades and plate
+    public static final RegistryObject<Item> SHARD_BLADE = ITEMS.register("shard_blade",
+            () -> new SwordItem(ModToolTiers.GOD_METAL, 4,2, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

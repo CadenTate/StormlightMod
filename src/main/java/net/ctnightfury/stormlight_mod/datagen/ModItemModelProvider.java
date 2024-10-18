@@ -32,6 +32,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         buttonItem(ModBlocks.CREM_BUTTON, ModBlocks.CREM_STONE);
         wallItem(ModBlocks.CREM_WALL, ModBlocks.CREM_STONE);
+
+        handheldItem(ModItems.SHARD_BLADE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -53,6 +55,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall",  new ResourceLocation(StormlightMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(StormlightMod.MOD_ID, "item/" + item.getId().getPath()));
     }
 
     // Use for Doors

@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> GEMSTONE_ORES = tag("gemstone_ores");
+        public static final TagKey<Block> NEEDS_GODMETAL_TOOL = tag("needs_godmetal_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(name));
