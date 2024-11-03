@@ -1,0 +1,42 @@
+package ctnightfury.stormlightmod.item;
+
+import ctnightfury.stormlightmod.StormlightMod;
+import ctnightfury.stormlightmod.block.ModBlocks;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Identifier;
+
+public class ModItemGroups {
+    public static final ItemGroup ALL_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+            Identifier.of(StormlightMod.MOD_ID, "all_items_group"),
+            FabricItemGroup.builder()
+                    .icon(() -> new ItemStack(ModItems.DIAMOND_SPHERE))
+                    .displayName(Text.translatable("itemgroup.stormlightmod.all_items"))
+                    .entries((displayContext, entries) -> {
+                        // Add Items Here
+                        entries.add(ModItems.SAPPHIRE_SPHERE);
+                        entries.add(ModItems.SMOKESTONE_SPHERE);
+                        entries.add(ModItems.RUBY_SPHERE);
+                        entries.add(ModItems.DIAMOND_SPHERE);
+                        entries.add(ModItems.EMERALD_SPHERE);
+                        entries.add(ModItems.GARNET_SPHERE);
+                        entries.add(ModItems.ZIRCON_SPHERE);
+                        entries.add(ModItems.AMETHYST_SPHERE);
+                        entries.add(ModItems.TOPAZ_SPHERE);
+                        entries.add(ModItems.HELIODOR_SPHERE);
+
+                        // Add Blocks here
+                        entries.add(ModBlocks.CREM_STONE);
+                        entries.add(ModBlocks.SAPPHIRE_ORE);
+                    })
+                    .build());
+
+    public static void registerItemGroups() {
+        StormlightMod.LOGGER.info("Registering Item Groups for "+StormlightMod.MOD_ID);
+    }
+}

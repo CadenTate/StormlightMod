@@ -1,0 +1,53 @@
+{
+  "item.stormlightmod.sapphire_sphere": "§9Sapphire Sphere§r",
+  "item.stormlightmod.smokestone_sphere": "§8Smokestone Sphere§r",
+  "item.stormlightmod.ruby_sphere": "§cRuby Sphere§r",
+  "item.stormlightmod.diamond_sphere": "§bDiamond Sphere§r",
+  "item.stormlightmod.emerald_sphere": "§2Emerald Sphere§r",
+  "item.stormlightmod.garnet_sphere": "§4Garnet Sphere§r",
+  "item.stormlightmod.zircon_sphere": "§3Zircon Sphere§r",
+  "item.stormlightmod.amethyst_sphere": "§5Amethyst Sphere§r",
+  "item.stormlightmod.topaz_sphere": "§6Topaz Sphere§r",
+  "item.stormlightmod.heliodor_sphere": "§eHeliodor Sphere§r",
+
+  "item.stormlightmod.sapphire_gemstone": "§9Sapphire Gemstone§r",
+  "item.stormlightmod.smokestone_gemstone": "§8Smokestone Gemstone§r",
+  "item.stormlightmod.ruby_gemstone": "§cRuby Gemstone§r",
+  "item.stormlightmod.diamond_gemstone": "§bDiamond Gemstone§r",
+  "item.stormlightmod.emerald_gemstone": "§2Emerald Gemstone§r",
+  "item.stormlightmod.garnet_gemstone": "§4Garnet Gemstone§r",
+  "item.stormlightmod.zircon_gemstone": "§3Zircon Gemstone§r",
+  "item.stormlightmod.amethyst_gemstone": "§5Amethyst Gemstone§r",
+  "item.stormlightmod.topaz_gemstone": "§6Topaz Gemstone§r",
+  "item.stormlightmod.heliodor_gemstone": "§eHeliodor Gemstone§r",
+
+  "item.stormlightmod.soulcaster": "Soulcaster",
+
+  "item.stormlightmod.lavis_bar": "Lavis Bar",
+  "item.stormlightmod.lavis_grain": "Lavis Grain",
+
+  "block.stormlightmod.crem_stone": "Crem Stone",
+  "block.stormlightmod.crem_stairs": "Crem Stairs",
+  "block.stormlightmod.crem_slab": "Crem Slab",
+  "block.stormlightmod.crem_button": "Crem Button",
+  "block.stormlightmod.crem_pressure_plate": "Crem Pressure Plate",
+  "block.stormlightmod.crem_wall": "Crem Wall",
+  "block.stormlightmod.hook_block": "Hook",
+
+  "block.stormlightmod.sapphire_ore": "Sapphire Ore",
+  "block.stormlightmod.smokestone_ore": "Smokestone Ore",
+  "block.stormlightmod.ruby_ore": "Ruby Ore",
+  "block.stormlightmod.diamond_ore": "Diamond Ore",
+  "block.stormlightmod.emerald_ore": "Emerald Ore",
+  "block.stormlightmod.garnet_ore": "Garnet Ore",
+  "block.stormlightmod.zircon_ore": "Zircon Ore",
+  "block.stormlightmod.amethyst_ore": "Amethyst Ore",
+  "block.stormlightmod.topaz_ore": "Topaz Ore",
+  "block.stormlightmod.heliodor_ore": "Heliodor Ore",
+
+
+  "itemgroup.stormlightmod.all_items": "The Stormlight Archive",
+  "key.categories.stormlightmod.stormlight": "Stormlight",
+  "key.stormlightmod.activateprimarysurge": "Primary Surge Activation",
+  "key.stormlightmod.controlprimarysurge": "Primary Surge Control"
+}
