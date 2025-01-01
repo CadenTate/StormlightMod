@@ -1,6 +1,7 @@
 package ctnightfury.stormlightmod.block;
 
 import ctnightfury.stormlightmod.StormlightMod;
+import ctnightfury.stormlightmod.block.custom.SphereLanternBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -25,6 +26,40 @@ public class ModBlocks {
                     .copy(Blocks.DIAMOND_ORE)
             )
     );
+    public static final Block SMOKESTONE_ORE = registerBlock("smokestone_ore",
+            new Block(AbstractBlock.Settings
+                    .copy(Blocks.DIAMOND_ORE)
+            )
+    );
+    public static final Block RUBY_ORE = registerBlock("ruby_ore",
+            new Block(AbstractBlock.Settings
+                    .copy(Blocks.DIAMOND_ORE)
+            )
+    );
+    public static final Block GARNET_ORE = registerBlock("garnet_ore",
+            new Block(AbstractBlock.Settings
+                    .copy(Blocks.DIAMOND_ORE)
+            )
+    );
+    public static final Block ZIRCON_ORE = registerBlock("zircon_ore",
+            new Block(AbstractBlock.Settings
+                    .copy(Blocks.DIAMOND_ORE)
+            )
+    );
+    public static final Block TOPAZ_ORE = registerBlock("topaz_ore",
+            new Block(AbstractBlock.Settings
+                    .copy(Blocks.DIAMOND_ORE)
+            )
+    );
+    public static final Block HELIODOR_ORE = registerBlock("heliodor_ore",
+            new Block(AbstractBlock.Settings
+                    .copy(Blocks.DIAMOND_ORE)
+            )
+    );
+
+    // Other Items
+    public static final Block SPHERE_LANTERN_BLOCK = registerBlock("sphere_lantern",
+            new SphereLanternBlock(AbstractBlock.Settings.copy(Blocks.IRON_BARS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -17,6 +17,12 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CREM_STONE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMOKESTONE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GARNET_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ZIRCON_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TOPAZ_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.HELIODOR_ORE);
     }
 
     @Override

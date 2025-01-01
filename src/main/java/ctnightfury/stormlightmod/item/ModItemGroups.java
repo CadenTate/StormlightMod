@@ -29,10 +29,19 @@ public class ModItemGroups {
                         entries.add(ModItems.AMETHYST_SPHERE);
                         entries.add(ModItems.TOPAZ_SPHERE);
                         entries.add(ModItems.HELIODOR_SPHERE);
+                        // Other Items
+                        entries.add(ModItems.SOULCASTER);
 
                         // Add Blocks here
                         entries.add(ModBlocks.CREM_STONE);
                         entries.add(ModBlocks.SAPPHIRE_ORE);
+                        entries.add(ModBlocks.SMOKESTONE_ORE);
+                        entries.add(ModBlocks.RUBY_ORE);
+                        entries.add(ModBlocks.GARNET_ORE);
+                        entries.add(ModBlocks.ZIRCON_ORE);
+                        entries.add(ModBlocks.TOPAZ_ORE);
+                        entries.add(ModBlocks.HELIODOR_ORE);
+                        entries.add(ModBlocks.SPHERE_LANTERN_BLOCK);
                     })
                     .build());
 
