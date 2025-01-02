@@ -31,6 +31,9 @@ public class ModItemGroups {
                         entries.add(ModItems.HELIODOR_SPHERE);
                         // Other Items
                         entries.add(ModItems.SOULCASTER);
+                        entries.add(ModItems.LAVIS_BAR);
+                        entries.add(ModItems.WINE);
+                        entries.add(ModItems.DRIED_LAVIS_POLYP);
 
                         // Add Blocks here
                         entries.add(ModBlocks.CREM_STONE);

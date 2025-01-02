@@ -2,6 +2,7 @@ package ctnightfury.stormlightmod.item;
 
 import ctnightfury.stormlightmod.StormlightMod;
 import ctnightfury.stormlightmod.item.custom.SoulcasterItem;
+import ctnightfury.stormlightmod.item.custom_drinks.Wine;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -37,6 +38,9 @@ public class ModItems {
             HELIODOR_SPHERE
     );
 
+    public static final Item DRIED_LAVIS_POLYP = registerItem("dried_lavis_polyp", new Item(new Item.Settings()));
+    public static final Item LAVIS_BAR = registerItem("lavis_bar", new Item(new Item.Settings().food(ModFoodComponents.LAVIS_BAR)));
+    public static final Item WINE = registerItem("wine", new Wine(new Item.Settings().food(ModFoodComponents.WINE)));
     public static final Item SOULCASTER = registerItem("soulcaster", new SoulcasterItem(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {

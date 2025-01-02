@@ -5,6 +5,7 @@ import ctnightfury.stormlightmod.item.ModItemGroups;
 import ctnightfury.stormlightmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,5 +25,7 @@ public class StormlightMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+
+		FuelRegistry.INSTANCE.add(ModItems.DRIED_LAVIS_POLYP, 300);
 	}
 }
