@@ -47,6 +47,10 @@
   "block.stormlightmod.topaz_ore": "Topaz Ore",
   "block.stormlightmod.heliodor_ore": "Heliodor Ore",
 
+  "tooltip.stormlightmod.sphere_lantern": "§7Holds up to four spheres",
+  "tooltip.stormlightmod.sphere_lantern.shift": "§7Hold §eShift§7 for more information",
+  "tooltip.stormlightmod.wine": "Follow the codes tonight",
+
 
   "itemgroup.stormlightmod.all_items": "The Stormlight Archive",
   "key.categories.stormlightmod.stormlight": "Stormlight",

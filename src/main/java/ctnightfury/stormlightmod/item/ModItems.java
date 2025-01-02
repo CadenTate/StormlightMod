@@ -6,10 +6,14 @@ import ctnightfury.stormlightmod.item.custom_drinks.Wine;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
+import java.util.List;
 import java.util.Set;
 
 public class ModItems {
@@ -40,7 +44,14 @@ public class ModItems {
 
     public static final Item DRIED_LAVIS_POLYP = registerItem("dried_lavis_polyp", new Item(new Item.Settings()));
     public static final Item LAVIS_BAR = registerItem("lavis_bar", new Item(new Item.Settings().food(ModFoodComponents.LAVIS_BAR)));
-    public static final Item WINE = registerItem("wine", new Wine(new Item.Settings().food(ModFoodComponents.WINE)));
+    // Demonstrates how to add tooltips to non-custom class items
+    public static final Item WINE = registerItem("wine", new Wine(new Item.Settings().food(ModFoodComponents.WINE)){
+        @Override
+        public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+            tooltip.add(Text.translatable("tooltip.stormlightmod.wine"));
+            super.appendTooltip(stack, context, tooltip, type);
+        }
+    });
     public static final Item SOULCASTER = registerItem("soulcaster", new SoulcasterItem(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
