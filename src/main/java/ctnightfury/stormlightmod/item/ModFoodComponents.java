@@ -1,7 +1,6 @@
 package ctnightfury.stormlightmod.item;
 
 import net.minecraft.component.type.FoodComponent;
-import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 

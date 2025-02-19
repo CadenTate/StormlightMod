@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "buttons",
+  "ingredients": [
+    {
+      "item": "stormlightmod:crem_stone"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "stormlightmod:crem_button"
+  }
+}

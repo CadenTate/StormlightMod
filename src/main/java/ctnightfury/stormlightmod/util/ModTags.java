@@ -17,7 +17,7 @@ public class ModTags {
     }
 
     public static class Items {
-        public static final TagKey<Item> TRANSFORMABLE_ITEMS = createTag("transformable_items");
+        public static final TagKey<Item> SPHERES = createTag("spheres");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.of(RegistryKeys.ITEM, Identifier.of(StormlightMod.MOD_ID, name));

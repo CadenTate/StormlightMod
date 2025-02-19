@@ -49,11 +49,12 @@
 
   "tooltip.stormlightmod.sphere_lantern": "§7Holds up to four spheres",
   "tooltip.stormlightmod.sphere_lantern.shift": "§7Hold §eShift§7 for more information",
-  "tooltip.stormlightmod.wine": "Follow the codes tonight",
+  "tooltip.stormlightmod.wine": "§7§oFollow the codes tonight",
+  "tooltip.stormlightmod.soulcaster": "§7An extremely rare fabrial...",
 
 
   "itemgroup.stormlightmod.all_items": "The Stormlight Archive",
-  "key.categories.stormlightmod.stormlight": "Stormlight",
-  "key.stormlightmod.activateprimarysurge": "Primary Surge Activation",
-  "key.stormlightmod.controlprimarysurge": "Primary Surge Control"
+  "key.category.stormlightmod.stormlight": "Stormlight",
+  "key.stormlightmod.primaryactivation": "Primary Surge Activation",
+  "key.stormlightmod.primarycontrol": "Primary Surge Control"
 }

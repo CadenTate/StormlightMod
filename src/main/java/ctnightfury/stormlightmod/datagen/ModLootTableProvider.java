@@ -28,6 +28,11 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         // Drops Self
         addDrop(ModBlocks.CREM_STONE);
+        addDrop(ModBlocks.CREM_STAIRS);
+        addDrop(ModBlocks.CREM_SLAB, slabDrops(ModBlocks.CREM_SLAB));
+        addDrop(ModBlocks.CREM_BUTTON);
+        addDrop(ModBlocks.CREM_PRESSURE_PLATE);
+        addDrop(ModBlocks.CREM_WAll);
         // Drops for Gemstone Ores
         //addDrop(ModBlocks.SAPPHIRE_ORE, oreDrops(ModBlocks.SAPPHIRE_ORE, ModItems.SAPPHIRE));
     }

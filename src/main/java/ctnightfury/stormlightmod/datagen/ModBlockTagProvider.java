@@ -36,5 +36,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL);
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.SAPPHIRE_ORE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS).add(ModBlocks.CREM_WAll);
     }
 }

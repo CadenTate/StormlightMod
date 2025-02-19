@@ -1,10 +1,10 @@
 package ctnightfury.stormlightmod;
 
 import ctnightfury.stormlightmod.block.ModBlocks;
+import ctnightfury.stormlightmod.componenet.ModDataComponentTypes;
 import ctnightfury.stormlightmod.item.ModItemGroups;
 import ctnightfury.stormlightmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
-
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,9 +22,11 @@ public class StormlightMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		// Client-side tick event (only needed for client-specific actions)
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModItemGroups.registerItemGroups();
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.DRIED_LAVIS_POLYP, 300);
 	}

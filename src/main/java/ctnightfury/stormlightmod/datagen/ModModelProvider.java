@@ -15,7 +15,12 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CREM_STONE);
+        BlockStateModelGenerator.BlockTexturePool cremStonePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.CREM_STONE);
+        cremStonePool.stairs(ModBlocks.CREM_STAIRS);
+        cremStonePool.slab(ModBlocks.CREM_SLAB);
+        cremStonePool.button(ModBlocks.CREM_BUTTON);
+        cremStonePool.pressurePlate(ModBlocks.CREM_PRESSURE_PLATE);
+        cremStonePool.wall(ModBlocks.CREM_WAll);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SAPPHIRE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SMOKESTONE_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
@@ -38,5 +43,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.AMETHYST_SPHERE, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOPAZ_SPHERE, Models.GENERATED);
         itemModelGenerator.register(ModItems.HELIODOR_SPHERE, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.WINE, Models.GENERATED);
     }
 }

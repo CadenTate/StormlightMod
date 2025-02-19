@@ -37,6 +37,11 @@ public class ModItemGroups {
 
                         // Add Blocks here
                         entries.add(ModBlocks.CREM_STONE);
+                        entries.add(ModBlocks.CREM_STAIRS);
+                        entries.add(ModBlocks.CREM_SLAB);
+                        entries.add(ModBlocks.CREM_BUTTON);
+                        entries.add(ModBlocks.CREM_PRESSURE_PLATE);
+                        entries.add(ModBlocks.CREM_WAll);
                         entries.add(ModBlocks.SAPPHIRE_ORE);
                         entries.add(ModBlocks.SMOKESTONE_ORE);
                         entries.add(ModBlocks.RUBY_ORE);
