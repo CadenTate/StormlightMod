@@ -1,6 +1,6 @@
 package ctnightfury.stormlightmod.surges;
 import net.minecraft.client.network.ClientPlayerEntity;
-import net.minecraft.entity.MovementType;
+import  net.minecraft.entity.MovementType;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.Vec3d;
 
