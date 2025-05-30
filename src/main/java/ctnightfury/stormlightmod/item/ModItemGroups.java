@@ -15,20 +15,13 @@ public class ModItemGroups {
     public static final ItemGroup ALL_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(StormlightMod.MOD_ID, "all_items_group"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(ModItems.DIAMOND_SPHERE))
+                    .icon(() -> new ItemStack(ModItems.SPHERES.get("diamond_broam_sphere")))
                     .displayName(Text.translatable("itemgroup.stormlightmod.all_items"))
                     .entries((displayContext, entries) -> {
                         // Add Items Here
-                        entries.add(ModItems.SAPPHIRE_SPHERE);
-                        entries.add(ModItems.SMOKESTONE_SPHERE);
-                        entries.add(ModItems.RUBY_SPHERE);
-                        entries.add(ModItems.DIAMOND_SPHERE);
-                        entries.add(ModItems.EMERALD_SPHERE);
-                        entries.add(ModItems.GARNET_SPHERE);
-                        entries.add(ModItems.ZIRCON_SPHERE);
-                        entries.add(ModItems.AMETHYST_SPHERE);
-                        entries.add(ModItems.TOPAZ_SPHERE);
-                        entries.add(ModItems.HELIODOR_SPHERE);
+                        for(Item item : ModItems.SPHERES.values()) {
+                            entries.add(item);
+                        }
                         // Other Items
                         entries.add(ModItems.SOULCASTER);
                         entries.add(ModItems.LAVIS_BAR);

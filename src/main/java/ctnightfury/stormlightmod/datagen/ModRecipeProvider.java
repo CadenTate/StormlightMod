@@ -25,7 +25,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         // Refer to #11 video for code for different recipes
         // Refer to #12 video for non-block blocks
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DIAMOND_SPHERE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SPHERES.get("diamond_broam_sphere"))
                 .pattern("GGG")
                 .pattern("GXG")
                 .pattern("GGG")

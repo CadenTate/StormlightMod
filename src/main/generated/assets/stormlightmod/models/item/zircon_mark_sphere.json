@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "stormlightmod:item/zircon_mark_sphere"
+  }
+}

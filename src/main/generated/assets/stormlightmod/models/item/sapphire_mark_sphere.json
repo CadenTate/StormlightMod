@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "stormlightmod:item/sapphire_mark_sphere"
+  }
+}

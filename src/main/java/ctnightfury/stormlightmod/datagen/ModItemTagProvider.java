@@ -17,17 +17,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
-        getOrCreateTagBuilder(ModTags.Items.SPHERES)
-                .add(ModItems.SAPPHIRE_SPHERE)
-                .add(ModItems.SMOKESTONE_SPHERE)
-                .add(ModItems.RUBY_SPHERE)
-                .add(ModItems.DIAMOND_SPHERE)
-                .add(ModItems.EMERALD_SPHERE)
-                .add(ModItems.GARNET_SPHERE)
-                .add(ModItems.ZIRCON_SPHERE)
-                .add(ModItems.AMETHYST_SPHERE)
-                .add(ModItems.TOPAZ_SPHERE)
-                .add(ModItems.HELIODOR_SPHERE)
-    ;}
+        FabricTagBuilder tagBuilder = getOrCreateTagBuilder(ModTags.Items.SPHERES);
+        for(Item item : ModItems.SPHERES.values()) {
+            tagBuilder.add(item);
+        }
+    }
 }
 

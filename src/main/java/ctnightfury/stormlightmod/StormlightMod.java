@@ -29,5 +29,9 @@ public class StormlightMod implements ModInitializer {
 		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.DRIED_LAVIS_POLYP, 300);
+
+		LOGGER.info("Registering all spheres...");
+		ModItems.registerSpheres();
+		LOGGER.info("Spheres registered!");
 	}
 }

@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -33,16 +34,9 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         // Sphere Models
-        itemModelGenerator.register(ModItems.SAPPHIRE_SPHERE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SMOKESTONE_SPHERE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.RUBY_SPHERE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.DIAMOND_SPHERE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.EMERALD_SPHERE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GARNET_SPHERE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ZIRCON_SPHERE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.AMETHYST_SPHERE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.TOPAZ_SPHERE, Models.GENERATED);
-        itemModelGenerator.register(ModItems.HELIODOR_SPHERE, Models.GENERATED);
+        for (Item item : ModItems.SPHERES.values()) {
+            itemModelGenerator.register(item, Models.GENERATED);
+        }
 
         itemModelGenerator.register(ModItems.WINE, Models.GENERATED);
     }
