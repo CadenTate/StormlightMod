@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GXG",
+    "GGG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "stormlightmod:diamond_broam_sphere"
+  }
+}

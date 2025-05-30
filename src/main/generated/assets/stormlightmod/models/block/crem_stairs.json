@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "stormlightmod:block/crem_stone",
+    "side": "stormlightmod:block/crem_stone",
+    "top": "stormlightmod:block/crem_stone"
+  }
+}
