@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"ctnightfury.stormlightmod.StormlightModClient"
+		],
+		"cardinal-components": [
+			"ctnightfury.stormlightmod.component.ModComponents"
 		]
 	},
 	"mixins": [
@@ -36,5 +39,11 @@
 	},
 	"suggests": {
 		"another-mod": "*"
+	},
+	"custom": {
+		"cardinal-components":[
+			"stormlight:stormlight",
+			"stormlight:gravitation"
+		]
 	}
 }

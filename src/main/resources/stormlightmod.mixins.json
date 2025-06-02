@@ -3,7 +3,8 @@
 	"package": "ctnightfury.stormlightmod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"MouseScrollMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

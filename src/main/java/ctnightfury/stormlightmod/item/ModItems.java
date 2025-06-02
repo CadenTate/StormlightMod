@@ -23,17 +23,6 @@ public class ModItems {
     // Sphere Items
     public static final Map<String, Item> SPHERES = new LinkedHashMap<>();
 
-//    public static final Item SAPPHIRE_SPHERE = registerItem("sapphire_sphere", new Item(new Item.Settings()));
-//    public static final Item SMOKESTONE_SPHERE = registerItem("smokestone_sphere", new Item(new Item.Settings()));
-//    public static final Item RUBY_SPHERE = registerItem("ruby_sphere", new Item(new Item.Settings()));
-//    public static final Item DIAMOND_SPHERE = registerItem("diamond_sphere", new Item(new Item.Settings()));
-//    public static final Item EMERALD_SPHERE = registerItem("emerald_sphere", new Item(new Item.Settings()));
-//    public static final Item GARNET_SPHERE = registerItem("garnet_sphere", new Item(new Item.Settings()));
-//    public static final Item ZIRCON_SPHERE = registerItem("zircon_sphere", new Item(new Item.Settings()));
-//    public static final Item AMETHYST_SPHERE = registerItem("amethyst_sphere", new Item(new Item.Settings()));
-//    public static final Item TOPAZ_SPHERE = registerItem("topaz_sphere", new Item(new Item.Settings()));
-//    public static final Item HELIODOR_SPHERE = registerItem("heliodor_sphere", new Item(new Item.Settings()));
-
     public static void registerSpheres() {
         for (SphereGemstone gemstone : SphereGemstone.values()) {
             for (SphereSize size : SphereSize.values()) {
@@ -43,7 +32,6 @@ public class ModItems {
                 SPHERES.put(id, item);
             }
         }
-        System.out.println(SPHERES.keySet());
     }
 
     public static final Item DRIED_LAVIS_POLYP = registerItem("dried_lavis_polyp", new Item(new Item.Settings()));
@@ -66,7 +54,7 @@ public class ModItems {
         StormlightMod.LOGGER.info("Registering Mod Items for " + StormlightMod.MOD_ID);
 
         // Adds custom item to existing ItemGroup
-//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).registerPackets(entries -> {
 //            entries.add(<INSERT ITEM HERE>);
 //        });
     }

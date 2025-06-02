@@ -1,16 +1,16 @@
 package ctnightfury.stormlightmod;
 
-import ctnightfury.stormlightmod.surges.Gravitation;
+import ctnightfury.stormlightmod.component.GravitationComponent;
+import ctnightfury.stormlightmod.component.ModComponents;
+import ctnightfury.stormlightmod.networking.SyncGravitationPayload;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class StormlightModClient implements ClientModInitializer {
     @Override
@@ -29,18 +29,52 @@ public class StormlightModClient implements ClientModInitializer {
 
         // END_CLIENT_TICK acts as a loop
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
-            if (client.player != null) {
-                while (activateSurge.wasPressed()) {
-                    Gravitation.isActive = !Gravitation.isActive;
-                    if (Gravitation.isActive) {
-                        client.player.sendMessage(Text.literal("Surge Activated"), true);
-                    } else client.player.sendMessage(Text.literal("Surge Deactivated"), true);
+            if (client.player != null ) {
+                // OLD CODE
+//                boolean isStormlight = ModComponents.STORMLIGHT.get(client.player).getStormlight() > 0;
+//                if(isStormlight) {
+//                    // Negates current active state and sends appropriate On / Off msg
+//                    while (activateSurge.wasPressed()) {
+//                        Gravitation.isActive = !Gravitation.isActive;
+//                        if (Gravitation.isActive) client.player.sendMessage(Text.literal("Surge Activated"), true);
+//                        else client.player.sendMessage(Text.literal("Surge Deactivated"), true);
+//                    }
+//                    // Changes the direction traveling
+//                    while (changeGravityDirection.wasPressed()) {
+//                        Gravitation.changeGravityDirection(client.player);
+//                    }
+//                    // Looping portion that causes the movement
+//                    if (Gravitation.isActive) {
+//                        Gravitation.enable(client.player);
+//                    }
+//                }
+//                else Gravitation.isActive = false;
+
+                boolean hasStormlight = ModComponents.STORMLIGHT.get(client.player).getStormlight() > 0;
+                GravitationComponent grav = ModComponents.GRAVITATION.get(client.player);
+
+                if(hasStormlight) {
+                    // Negates current active state and sends appropriate On / Off msg
+                    while (activateSurge.wasPressed()) {
+                        grav.invertActive();
+                        if (grav.isActive()) client.player.sendMessage(Text.literal("Surge Activated"), true);
+                        else client.player.sendMessage(Text.literal("Surge Deactivated"), true);
+                    }
+                    // Changes the direction traveling
+                    while (changeGravityDirection.wasPressed()) {
+                        grav.changeGravityDirection(client.player);
+                    }
+                    // Looping portion that causes the movement
+                    if (grav.isActive()) {
+                        grav.enable(client.player);
+                    }
                 }
-                while(changeGravityDirection.wasPressed()) {
-                    Gravitation.changeGravityDirection(client.player);
-                }
-                if (Gravitation.isActive)Gravitation.enable(client.player);
+                else grav.setActive(false);
+
+                ClientPlayNetworking.send(new SyncGravitationPayload(grav.isActive()));
             }
         });
+
+
     }
 }

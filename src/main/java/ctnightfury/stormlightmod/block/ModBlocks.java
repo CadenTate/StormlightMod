@@ -67,7 +67,7 @@ public class ModBlocks {
         StormlightMod.LOGGER.info("Registering Mod Blocks for " + StormlightMod.MOD_ID);
 
         // How to add to existing item groups
-//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+//        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).registerPackets(entries -> {
 //            entries.add(CREM_STONE);
 //        });
     }

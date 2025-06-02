@@ -1,9 +1,12 @@
 package ctnightfury.stormlightmod;
 
 import ctnightfury.stormlightmod.block.ModBlocks;
-import ctnightfury.stormlightmod.componenet.ModDataComponentTypes;
+import ctnightfury.stormlightmod.component.ModDataComponentTypes;
 import ctnightfury.stormlightmod.item.ModItemGroups;
 import ctnightfury.stormlightmod.item.ModItems;
+import ctnightfury.stormlightmod.networking.ModNetworkingHandler;
+import ctnightfury.stormlightmod.util.ModEventHandler;
+import ctnightfury.stormlightmod.util.StormlightCommands;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
@@ -33,5 +36,11 @@ public class StormlightMod implements ModInitializer {
 		LOGGER.info("Registering all spheres...");
 		ModItems.registerSpheres();
 		LOGGER.info("Spheres registered!");
+
+		StormlightCommands.register();
+		ModEventHandler.registerEvents();
+
+		ModNetworkingHandler.registerPayloads();
+		ModNetworkingHandler.registerReceivers();
 	}
 }
