@@ -11,6 +11,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import screens.ModScreenHandlerTypes;
 
 public class StormlightMod implements ModInitializer {
 	public static final String MOD_ID = "stormlightmod";
@@ -33,14 +34,12 @@ public class StormlightMod implements ModInitializer {
 
 		FuelRegistry.INSTANCE.add(ModItems.DRIED_LAVIS_POLYP, 300);
 
-		LOGGER.info("Registering all spheres...");
-		ModItems.registerSpheres();
-		LOGGER.info("Spheres registered!");
-
 		StormlightCommands.register();
 		ModEventHandler.registerEvents();
 
 		ModNetworkingHandler.registerPayloads();
 		ModNetworkingHandler.registerReceivers();
+
+		ModScreenHandlerTypes.registerScreenHandlers();
 	}
 }

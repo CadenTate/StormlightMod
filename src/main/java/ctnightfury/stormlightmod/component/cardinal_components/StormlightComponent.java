@@ -1,9 +1,10 @@
-package ctnightfury.stormlightmod.component;
+package ctnightfury.stormlightmod.component.cardinal_components;
 
 
+import ctnightfury.stormlightmod.component.ModComponents;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryWrapper;
-import ctnightfury.stormlightmod.component.interfaces.StormlightComponentInterface;
+import ctnightfury.stormlightmod.component.cardinal_components.interfaces.StormlightComponentInterface;
 import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
 import org.ladysnake.cca.api.v3.component.tick.ServerTickingComponent;
 

@@ -1,8 +1,7 @@
-package ctnightfury.stormlightmod.component.interfaces;
+package ctnightfury.stormlightmod.component.cardinal_components.interfaces;
 
 import net.minecraft.client.network.ClientPlayerEntity;
 import org.ladysnake.cca.api.v3.component.Component;
-import net.minecraft.util.math.Vec3d;
 
 public interface GravitationComponentInterface extends Component {
     public boolean isActive();

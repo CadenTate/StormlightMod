@@ -2,6 +2,7 @@ package ctnightfury.stormlightmod.component;
 
 import ctnightfury.stormlightmod.StormlightMod;
 import net.minecraft.component.ComponentType;
+import net.minecraft.component.type.BundleContentsComponent;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -11,7 +12,9 @@ import java.util.function.UnaryOperator;
 
 public class ModDataComponentTypes {
 
-//    public static final ComponentType<String>
+    public static final ComponentType<SpherePouchContentsComponent> SPHERE_POUCH_CONTENTS = register(
+            "pouch_contents", builder -> builder.codec(SpherePouchContentsComponent.CODEC).packetCodec(SpherePouchContentsComponent.PACKET_CODEC).cache()
+    );
 
     private static <T>ComponentType<T> register(String name, UnaryOperator<ComponentType.Builder<T>> builderOperator) {
         return Registry.register(Registries.DATA_COMPONENT_TYPE, Identifier.of(StormlightMod.MOD_ID, name), builderOperator.apply(ComponentType.builder()).build());

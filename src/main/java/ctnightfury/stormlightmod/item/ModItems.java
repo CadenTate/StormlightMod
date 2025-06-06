@@ -1,8 +1,11 @@
 package ctnightfury.stormlightmod.item;
 
 import ctnightfury.stormlightmod.StormlightMod;
+import ctnightfury.stormlightmod.component.ModDataComponentTypes;
+import ctnightfury.stormlightmod.component.SpherePouchContentsComponent;
 import ctnightfury.stormlightmod.item.custom.SoulcasterItem;
 import ctnightfury.stormlightmod.item.custom.SphereItem;
+import ctnightfury.stormlightmod.item.custom.SpherePouchItem;
 import ctnightfury.stormlightmod.item.custom_drinks.Wine;
 import ctnightfury.stormlightmod.item.enums.SphereGemstone;
 import ctnightfury.stormlightmod.item.enums.SphereSize;
@@ -46,11 +49,16 @@ public class ModItems {
         }
     });
 
+    public static final Item SPHERE_POUCH_ITEM = registerItem(
+    		"sphere_pouch", new SpherePouchItem(new Item.Settings().maxCount(1).component(ModDataComponentTypes.SPHERE_POUCH_CONTENTS, SpherePouchContentsComponent.DEFAULT))
+    );
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(StormlightMod.MOD_ID, name), item);
     }
 
     public static void registerModItems() {
+        registerSpheres();
         StormlightMod.LOGGER.info("Registering Mod Items for " + StormlightMod.MOD_ID);
 
         // Adds custom item to existing ItemGroup

@@ -1,7 +1,7 @@
-// 1.21	2025-05-30T16:28:55.4503781	Stormlight mod/Block Loot Tables
+// 1.21	2025-06-04T23:20:34.9021947	Stormlight mod/Block Loot Tables
 6ed590d2fa22dd4043fcedc8a5df162aaed98bac data\stormlightmod\loot_table\blocks\crem_button.json
 5461704977952b911a58cf112aa912aa0b69e0aa data\stormlightmod\loot_table\blocks\crem_pressure_plate.json
-256e57f7815e88e6900a20b559b24f6a4ceaf162 data\stormlightmod\loot_table\blocks\crem_slab.json
 8a4e52dd52add3abaf89cb24b829c6c79d6fbe75 data\stormlightmod\loot_table\blocks\crem_stone.json
+256e57f7815e88e6900a20b559b24f6a4ceaf162 data\stormlightmod\loot_table\blocks\crem_slab.json
 981eb96e5b2c1559fc52d4098165eb82f434124f data\stormlightmod\loot_table\blocks\crem_stairs.json
 91f8dacc801ab72d4e9361c331cb8aab17397407 data\stormlightmod\loot_table\blocks\crem_wall.json

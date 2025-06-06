@@ -1,6 +1,6 @@
-package ctnightfury.stormlightmod.component;
+package ctnightfury.stormlightmod.component.cardinal_components;
 
-import ctnightfury.stormlightmod.component.interfaces.GravitationComponentInterface;
+import ctnightfury.stormlightmod.component.cardinal_components.interfaces.GravitationComponentInterface;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryWrapper;

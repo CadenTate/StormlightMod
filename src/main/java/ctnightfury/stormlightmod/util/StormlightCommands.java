@@ -2,7 +2,7 @@ package ctnightfury.stormlightmod.util;
 
 import com.mojang.brigadier.arguments.IntegerArgumentType;
 import ctnightfury.stormlightmod.component.ModComponents;
-import ctnightfury.stormlightmod.component.interfaces.StormlightComponentInterface;
+import ctnightfury.stormlightmod.component.cardinal_components.interfaces.StormlightComponentInterface;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.command.argument.EntityArgumentType;
 import net.minecraft.server.command.CommandManager;

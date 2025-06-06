@@ -1,5 +1,7 @@
 package ctnightfury.stormlightmod.component;
 
+import ctnightfury.stormlightmod.component.cardinal_components.GravitationComponent;
+import ctnightfury.stormlightmod.component.cardinal_components.StormlightComponent;
 import net.minecraft.util.Identifier;
 import org.ladysnake.cca.api.v3.component.ComponentKey;
 import org.ladysnake.cca.api.v3.component.ComponentRegistry;

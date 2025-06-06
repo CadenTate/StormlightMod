@@ -1,7 +1,7 @@
 package ctnightfury.stormlightmod.util;
 
 import ctnightfury.stormlightmod.component.ModComponents;
-import ctnightfury.stormlightmod.component.StormlightComponent;
+import ctnightfury.stormlightmod.component.cardinal_components.StormlightComponent;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.ActionResult;

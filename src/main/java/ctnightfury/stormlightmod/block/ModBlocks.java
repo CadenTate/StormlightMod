@@ -1,8 +1,10 @@
 package ctnightfury.stormlightmod.block;
 
 import ctnightfury.stormlightmod.StormlightMod;
+import ctnightfury.stormlightmod.block.custom.CustomChest;
 import ctnightfury.stormlightmod.block.custom.SphereLanternBlock;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -10,7 +12,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-
     public static final Block CREM_STONE = registerBlock("crem_stone",
             new Block(AbstractBlock.Settings.copy(Blocks.TUFF).strength(0.4f)));
 
@@ -53,6 +54,11 @@ public class ModBlocks {
     // Other Blocks
     public static final Block SPHERE_LANTERN_BLOCK = registerBlock("sphere_lantern",
             new SphereLanternBlock(AbstractBlock.Settings.copy(Blocks.LANTERN).luminance(state -> state.get(SphereLanternBlock.LUMINANCE))));
+
+//    public static final Block CUSTOM_CHEST = registerBlock("custom_chest", new CustomChest(
+//            AbstractBlock.Settings.copy(Blocks.CHEST),
+//            () -> BlockEntityType.CHEST)
+//    );
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

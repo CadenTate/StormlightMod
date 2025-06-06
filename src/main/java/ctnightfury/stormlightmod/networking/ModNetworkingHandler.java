@@ -1,6 +1,6 @@
 package ctnightfury.stormlightmod.networking;
 
-import ctnightfury.stormlightmod.component.GravitationComponent;
+import ctnightfury.stormlightmod.component.cardinal_components.GravitationComponent;
 import ctnightfury.stormlightmod.component.ModComponents;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;

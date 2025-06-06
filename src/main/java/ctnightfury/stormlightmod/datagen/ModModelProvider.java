@@ -39,5 +39,6 @@ public class ModModelProvider extends FabricModelProvider {
         }
 
         itemModelGenerator.register(ModItems.WINE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPHERE_POUCH_ITEM, Models.GENERATED);
     }
 }

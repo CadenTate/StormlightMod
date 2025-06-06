@@ -1,6 +1,6 @@
 package ctnightfury.stormlightmod.mixin;
 
-import ctnightfury.stormlightmod.component.GravitationComponent;
+import ctnightfury.stormlightmod.component.cardinal_components.GravitationComponent;
 import ctnightfury.stormlightmod.component.ModComponents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.Mouse;

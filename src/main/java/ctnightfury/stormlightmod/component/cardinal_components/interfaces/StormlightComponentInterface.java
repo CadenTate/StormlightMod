@@ -1,4 +1,4 @@
-package ctnightfury.stormlightmod.component.interfaces;
+package ctnightfury.stormlightmod.component.cardinal_components.interfaces;
 
 import org.ladysnake.cca.api.v3.component.Component;
 

@@ -1,20 +1,25 @@
 package ctnightfury.stormlightmod;
 
-import ctnightfury.stormlightmod.component.GravitationComponent;
+import ctnightfury.stormlightmod.component.cardinal_components.GravitationComponent;
 import ctnightfury.stormlightmod.component.ModComponents;
 import ctnightfury.stormlightmod.networking.SyncGravitationPayload;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
+import screens.ModScreenHandlerTypes;
+import screens.SpherePouchScreen;
 
 public class StormlightModClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
+        HandledScreens.register(ModScreenHandlerTypes.SPHERE_POUCH_SCREEN_TYPE, SpherePouchScreen::new);
+
         KeyBinding activateSurge = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.stormlightmod.primaryactivation",
                 InputUtil.Type.KEYSYM, // KEYSYM for Keyboard | MOUSE for Mouse
