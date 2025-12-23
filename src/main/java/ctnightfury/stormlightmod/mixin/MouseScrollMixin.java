@@ -4,7 +4,7 @@ import ctnightfury.stormlightmod.component.cardinal_components.GravitationCompon
 import ctnightfury.stormlightmod.component.ModComponents;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.Mouse;
-import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,13 +15,17 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class MouseScrollMixin {
     @Inject(method = "onMouseScroll", at = @At("HEAD"), cancellable = true)
     private void interceptScroll(long window, double horizontal, double vertical, CallbackInfo ci) {
-        if(MinecraftClient.getInstance().player instanceof PlayerEntity player) {
-            GravitationComponent grav = ModComponents.GRAVITATION.get(player);
-            if (grav.isActive()) {
-                grav.changePower((int) vertical);
-                MinecraftClient.getInstance().player.sendMessage(Text.literal(Double.toString(grav.getNewPower())), true);
-                ci.cancel(); // Prevents default Minecraft behavior
-            }
+        ClientPlayerEntity player = MinecraftClient.getInstance().player;
+        if (player == null) return;
+
+        GravitationComponent grav = ModComponents.GRAVITATION.get(player);
+        if (grav.isActive()) {
+            grav.changePower((int) vertical);
+            player.sendMessage(
+                    Text.literal(Double.toString(grav.getNewPower())),
+                    true
+            );
+            ci.cancel();
         }
     }
 }

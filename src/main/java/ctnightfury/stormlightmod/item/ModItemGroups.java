@@ -2,7 +2,6 @@ package ctnightfury.stormlightmod.item;
 
 import ctnightfury.stormlightmod.StormlightMod;
 import ctnightfury.stormlightmod.block.ModBlocks;
-import ctnightfury.stormlightmod.item.custom.SpherePouchItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -29,6 +28,12 @@ public class ModItemGroups {
                         entries.add(ModItems.WINE);
                         entries.add(ModItems.DRIED_LAVIS_POLYP);
                         entries.add(ModItems.SPHERE_POUCH_ITEM);
+
+                        // Shardplate
+                        entries.add(ModItems.SHARDPLATE_HELMET);
+                        entries.add(ModItems.SHARDPLATE_CHESTPLATE);
+                        entries.add(ModItems.SHARDPLATE_LEGGINGS);
+                        entries.add(ModItems.SHARDPLATE_BOOTS);
 
                         // Add Blocks here
                         entries.add(ModBlocks.CREM_STONE);

@@ -1,13 +1,13 @@
 package ctnightfury.stormlightmod.component.cardinal_components;
 
-import ctnightfury.stormlightmod.component.cardinal_components.interfaces.GravitationComponentInterface;
+import ctnightfury.stormlightmod.component.cardinal_components.interfaces.SurgeInterface;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.math.Vec3d;
 import org.ladysnake.cca.api.v3.component.sync.AutoSyncedComponent;
 
-public class GravitationComponent implements GravitationComponentInterface, AutoSyncedComponent{
+public class GravitationComponent implements SurgeInterface, AutoSyncedComponent{
     private final Object provider;
 
     private boolean isActive = false;
@@ -49,7 +49,6 @@ public class GravitationComponent implements GravitationComponentInterface, Auto
 
 
     // Client-side logic (e.g., player effects, animations)
-    @Override
     public void changeGravityDirection(ClientPlayerEntity player) {
         power = newPower;
         // Convert yaw value to the one that is read in f3

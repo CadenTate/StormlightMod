@@ -24,7 +24,6 @@ public final class SpherePouchContentsComponent implements TooltipData {
             .collect(PacketCodecs.toList())
             .xmap(SpherePouchContentsComponent::new, component -> component.stacks);
     private static final Fraction NESTED_BUNDLE_OCCUPANCY = Fraction.getFraction(1, 16);
-    private static final int ADD_TO_NEW_SLOT = -1;
     final List<ItemStack> stacks;
     final Fraction occupancy;
 
@@ -59,10 +58,6 @@ public final class SpherePouchContentsComponent implements TooltipData {
 
     public ItemStack get(int index) {
         return this.stacks.get(index);
-    }
-
-    public Stream<ItemStack> stream() {
-        return this.stacks.stream().map(ItemStack::copy);
     }
 
     public Iterable<ItemStack> iterate() {

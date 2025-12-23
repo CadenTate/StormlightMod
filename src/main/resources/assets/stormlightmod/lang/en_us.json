@@ -49,6 +49,12 @@
   "item.stormlightmod.dried_lavis_polyp": "Dried Lavis Polyp",
   "item.stormlightmod.sphere_pouch": "Sphere Pouch",
 
+  "item.stormlightmod.shardplate_helmet": "Shardplate Helmet",
+  "item.stormlightmod.shardplate_chestplate": "Shardplate Chestplate",
+  "item.stormlightmod.shardplate_leggings": "Shardplate Leggings",
+  "item.stormlightmod.shardplate_boots": "Shardplate Boots",
+
+
   "block.stormlightmod.crem_stone": "Crem Stone",
   "block.stormlightmod.crem_stairs": "Crem Stairs",
   "block.stormlightmod.crem_slab": "Crem Slab",

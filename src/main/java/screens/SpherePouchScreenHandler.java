@@ -2,6 +2,10 @@ package screens;
 
 import ctnightfury.stormlightmod.component.ModDataComponentTypes;
 import ctnightfury.stormlightmod.component.SpherePouchContentsComponent;
+import ctnightfury.stormlightmod.item.ModItems;
+import ctnightfury.stormlightmod.item.custom.SpherePouchItem;
+import net.minecraft.block.Block;
+import net.minecraft.block.ShulkerBoxBlock;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventory;
@@ -11,6 +15,8 @@ import net.minecraft.item.Items;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
+import net.minecraft.util.math.Direction;
+import org.jetbrains.annotations.Nullable;
 
 public class SpherePouchScreenHandler extends ScreenHandler {
     private static final int NUM_COLUMNS = 10;
@@ -29,7 +35,13 @@ public class SpherePouchScreenHandler extends ScreenHandler {
         // Creates Pouch Inventory
         for (int j = 0; j < NUM_ROWS; j++) {
             for (int k = 0; k < NUM_COLUMNS; k++) {
-                this.addSlot(new Slot(inventory, k + j * NUM_COLUMNS, -1 + k * 18, 18 + j * 18));
+                final int index = k + j * NUM_COLUMNS;
+                this.addSlot(new Slot(inventory, index, -1 + k * 18, 18 + j * 18) {
+                    @Override
+                    public boolean canInsert(ItemStack stack) {
+                        return stack.getItem() == ModItems.SPHERES.values().stream().toList().get(index);
+                    }
+                });
             }
         }
 
@@ -66,11 +78,11 @@ public class SpherePouchScreenHandler extends ScreenHandler {
         if (slot2 != null && slot2.hasStack()) {
             ItemStack itemStack2 = slot2.getStack();
             itemStack = itemStack2.copy();
-            if (slot < NUM_ROWS * NUM_COLUMNS) {
-                if (!this.insertItem(itemStack2, NUM_ROWS * NUM_COLUMNS, this.slots.size(), true)) {
+            if (slot < this.inventory.size()) {
+                if (!this.insertItem(itemStack2, this.inventory.size(), this.slots.size(), true)) {
                     return ItemStack.EMPTY;
                 }
-            } else if (!this.insertItem(itemStack2, 0, NUM_ROWS * NUM_COLUMNS, false)) {
+            } else if (!this.insertItem(itemStack2, 0, this.inventory.size(), false)) {
                 return ItemStack.EMPTY;
             }
 
@@ -86,6 +98,11 @@ public class SpherePouchScreenHandler extends ScreenHandler {
     @Override
     public boolean canUse(PlayerEntity player) {
         return true;
+    }
+
+    @Override
+    public boolean canInsertIntoSlot(ItemStack stack, Slot slot) {
+        return !(stack.getItem() instanceof SpherePouchItem);
     }
 
     public int getRows() {

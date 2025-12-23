@@ -11,6 +11,8 @@ public class SpherePouchScreen extends HandledScreen<SpherePouchScreenHandler>{
     private static final Identifier TEXTURE = Identifier.of(StormlightMod.MOD_ID, "textures/gui/container/sphere_pouch.png");
     private final int rows;
 
+    // TODO: Update screen writing code
+
     public SpherePouchScreen(SpherePouchScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);
         this.rows = handler.getRows();
@@ -27,7 +29,7 @@ public class SpherePouchScreen extends HandledScreen<SpherePouchScreenHandler>{
         // Draws the sphere pouch inventory
         context.drawTexture(TEXTURE, i-9, j, 0, 0, this.backgroundWidth+18, this.rows * 18 + 24);
         // Draws the player inventory
-        context.drawTexture(TEXTURE, i, j + this.rows * 18 + 17, 0, 126, this.backgroundWidth, 96);
+        context.drawTexture(TEXTURE, i, j + this.rows * 18 + 17, 10, 71, this.backgroundWidth, 96);
     }
 
     @Override

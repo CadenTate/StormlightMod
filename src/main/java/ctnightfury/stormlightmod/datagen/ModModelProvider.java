@@ -1,12 +1,14 @@
 package ctnightfury.stormlightmod.datagen;
 
 import ctnightfury.stormlightmod.block.ModBlocks;
+import ctnightfury.stormlightmod.item.ModItemGroups;
 import ctnightfury.stormlightmod.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Item;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -40,5 +42,10 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.WINE, Models.GENERATED);
         itemModelGenerator.register(ModItems.SPHERE_POUCH_ITEM, Models.GENERATED);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SHARDPLATE_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SHARDPLATE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SHARDPLATE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.SHARDPLATE_BOOTS);
     }
 }
